@@ -77,7 +77,8 @@ categorySchema.pre("save", function (next) {
 });
 
 // ─── Index ───────────────────────────────────────────────────────────────
-categorySchema.index({ slug: 1 });
+// Note: slug and name are already indexed via unique:true above
+categorySchema.index({ createdAt: -1 }); // Latest categories first
 
 const Category = mongoose.model("Category", categorySchema);
 module.exports = Category;
