@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ─── Favicon ─────────────────────────────────────────────────── -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- ─── Google Fonts ────────────────────────────────────────────── -->
+    <!-- Playfair Display: Editorial headings -->
+    <!-- DM Sans: Clean, modern UI text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ─── SEO Meta Tags (React Helmet overrides these per page) ──── -->
+    <title>ShopEase — Premium Shopping Experience</title>
+    <meta
+      name="description"
+      content="Discover curated products across fashion, electronics, and home. Premium shopping with fast delivery."
+    />
+
+    <!-- ─── Open Graph (Social Sharing) ─────────────────────────────── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ShopEase — Premium Shopping Experience" />
+    <meta
+      property="og:description"
+      content="Discover curated products across fashion, electronics, and home."
+    />
+  </head>
+  <body>
+    <!-- React mounts here -->
+    <div id="root"></div>
+
+    <!-- ─── Vite Entry Point ─────────────────────────────────────────── -->
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- ─── Razorpay Script ──────────────────────────────────────────── -->
+    <!-- Loaded dynamically in CheckoutPage to avoid blocking initial load -->
+    <!-- See: src/pages/public/CheckoutPage.jsx for dynamic loading -->
+  </body>
+</html>
